@@ -1,12 +1,12 @@
 # import config
 import torch
 import flask
-from flask import Flask, request, render_template
+from flask import Flask, request, jsonify, render_template
 import json
 from transformers import BartTokenizer, BartForConditionalGeneration, BartConfig
 from transformers import T5Tokenizer, T5ForConditionalGeneration, T5Config
 
-#BART_PATH = 'facebook/bart-large'
+BART_PATH = 'facebook/bart-large'
 T5_PATH = 't5-base'
 # BART_PATH = 'model/bart'
 # T5_PATH = 'model/t5'
